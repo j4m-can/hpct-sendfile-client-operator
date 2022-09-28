@@ -1,0 +1,5 @@
+# Copyright 2022 Canonical Ltd.
+# See LICENSE file for licensing details.
+
+list-files:
+  description: List files received.

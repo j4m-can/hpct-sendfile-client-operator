@@ -1,0 +1,17 @@
+# Copyright 2022 Canonical Ltd.
+# See LICENSE file for licensing details.
+
+# For a complete list of supported options, see:
+# https://juju.is/docs/sdk/metadata-reference
+
+name: hpct-sendfile-client-operator
+display-name: |
+  Sendfile client operator
+description: |
+  Receives posted files over a relation
+summary: |
+  Works with sendfile server operator to send-receive files.
+
+requires:
+  sendfile:
+    interface: sendfile
