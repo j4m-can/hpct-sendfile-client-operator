@@ -2,10 +2,10 @@
 # Copyright 2022 Canonical Ltd.
 # See LICENSE file for licensing details.
 
-from hpctlib.ext.interfaces.file import FileDataInterface
-from hpctlib.interface import interface_registry
-from hpctlib.interface.relation import RelationSuperInterface, UnitBucketInterface
-from hpctlib.interface.value import String
+from hpctinterfaces import interface_registry
+from hpctinterfaces.ext.file import FileDataInterface
+from hpctinterfaces.relation import RelationSuperInterface, UnitBucketInterface
+from hpctinterfaces.value import String
 
 
 class UnitSendfileRelationSuperInterface(RelationSuperInterface):

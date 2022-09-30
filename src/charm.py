@@ -14,7 +14,7 @@ from ops.charm import CharmBase
 from ops.main import main
 from ops.model import ActiveStatus
 
-from hpctlib.interface import interface_registry
+from hpctinterfaces import interface_registry
 
 # load
 import interfaces.sendfile
