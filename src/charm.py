@@ -64,7 +64,7 @@ class HpctSendfileClientCharm(CharmBase):
         server_iface = self.siface.select(event.unit)
         client_iface = self.siface.select(self.unit)
 
-        if server_iface.file.nonce == "":
+        if server_iface.file.nonce in [None, ""]:
             # nothing ready to get
             return
 
