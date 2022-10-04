@@ -13,9 +13,6 @@ bases:
 parts:
   charm:
     override-build: |
-      # vendor packages
+      # ensure git is available
       git --version || apt install -y git
-      rm -rf src/vendor hpctinterfaces
-      mkdir -p src/vendor
-      (cd src/vendor; git clone https://github.com/j4m-can/hpct-interfaces.git; cd ..; ln -sf vendor/hpct-interfaces/lib/hpctinterfaces .)
       craftctl default
